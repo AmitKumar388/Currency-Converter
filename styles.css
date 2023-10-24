@@ -4,14 +4,18 @@
             margin: 0;
             padding: 0;
         }
-
+        body{
+            background-color: #CCCCFF;
+        }
         nav {
             font-family: 'Noto Sans', sans-serif;
             font-weight: 900;
             display: flex;
-            font-size: 20px;
-            background-color: rgb(224, 209, 245);
+            font-size: 15px;
+            background-color: #57FEFF ;
             padding: 23px;
+            border-radius: 10px;
+            height: 15px;
         }
 
         nav li a {
@@ -31,7 +35,7 @@
             justify-content: center;
             align-items: center;
             margin: 0 23px;
-            font-size: 24px;
+            font-size: 20px;
         }
 
         nav ul li {
@@ -48,14 +52,15 @@
             font-family: 'Poppins', sans-serif;
             max-width: 80vw;
             margin: auto;
+            text-align: center;
         }
 
         .container h1,
         h2 {
             margin: 23px 0;
         }
-
         .container form {
+            align-items: center;
             display: flex;
             flex-direction: column;
         }
@@ -63,10 +68,15 @@
         .container form label {
             font-size: 25px;
         }
-
-        .container form input[type='number'],
-        select,
-        label {
+        .container select{
+            border-radius: 10px;
+            background-color: #E5E4E2;
+        }
+        .container input{
+            border-radius: 10px;
+            background-color: #E5E4E2;
+        }
+        .container form input[type='number'], select, label {
             font-size: 25px;
             width: 23vw;
             margin-bottom: 23px;
@@ -76,25 +86,30 @@
             width: 144px;
             padding: 5px 8px;
             font-size: 20px;
-            background: #e0d0f5;
-            color: black;
+            background: #8553c7;
+            color: white;
             border-radius: 13px;
             cursor: pointer;
         }
 
         .output {
             display: none;
+            margin-left: 175px ;
         }
-
+        .output h2{
+            text-align: center;
+        }
         .output table {
             width: 50vw;
             text-align: center;
             border: 2px solid black;
             font-size: 20px;
+            margin-left: 100px;
         }
 
         .output table th{
             padding: 3px;
+            text-align: center;
         }
 
         @media (max-width: 600px) {
